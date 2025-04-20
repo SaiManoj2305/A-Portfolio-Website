@@ -1,0 +1,547 @@
+
+/* Cormorant Garamond
+Josefin Sans
+Poppins
+Playfair Display
+*/
+
+
+/* ----------------Home Page-------------- */
+
+*{
+    position: ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+}
+
+
+
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(sun.jpg);
+    background-size: cover;
+    background-position: center
+}
+.container{
+    padding: 20px 3%;
+}
+
+nav{
+     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 30px;
+}
+
+.logo{
+    
+    width: 10%;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    left: 0%;
+    bottom: -6px;
+    transition-duration: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.para{
+    margin-top: 15%;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.para h1{
+    margin-top: 10px;
+    font-size: 60px;
+    font-family: Cormorant Garamond, 'sans-serif';
+    
+}
+
+.para h1 span{
+    color: #ff4500;
+    font-family: Cormorant Garamond, 'sans-serif'; 
+    
+}
+
+
+/* ------------------About Page------------- */
+
+#about{
+    padding: 80px 0px;
+    color: white; 
+    width: 100%;
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.about-col-1 img{
+    width: 93%;
+    height: 95%;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.about-col-1{
+    flex-basis: 35%;    
+    
+}
+
+.about-col-2{
+    margin-top: 20px;
+    flex-basis: 60%;
+    
+}
+
+
+.sub-title{
+    font-family: Josefin Sans, 'sans-serif';
+    font-size: 50px;
+}
+
+.about-col-2 p{
+    margin-left: 0px;
+}
+
+.tab-tit{
+    display: flex;
+/*    margin: 10px 0px 20px;*/
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-left: 25px;
+    
+}
+
+.tab-links{
+    margin-left: 50px;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.tab-links::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    left: 0%;
+    bottom: -7px;   
+    transition-duration: 0.3s;    
+}
+
+.tab-links:hover::after{
+    width: 100%;
+    
+}
+
+.tab-con{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.tab-con ul li{
+    font-size: 17px;
+    font-weight: 100;
+    list-style: none;
+    margin: 30px 0px;
+    padding-top: 10px;
+    line-height: 25px;
+}
+
+.tab-con ul li span{
+    color: #cb0000;
+    font-size: 16px;
+    line-height: 10px; 
+    text-transform: uppercase;
+}
+
+.tab-con-col-0{
+    flex-basis: 33.3%;
+}
+
+.tab-con-col-1{
+    flex-basis: 30.3%;
+}
+
+.tab-con-col-1{
+    flex-basis: 30.3%;
+}
+
+
+
+.con-col-1{
+    flex-basis: 45%;
+    border-right: 100%;
+}
+
+.con-col-2{
+    flex-basis: 45%;
+}
+
+
+
+
+/*--------Project Page------*/
+
+#project{
+    margin: 100px;
+}
+
+.padding-para{
+    /* color: red; */
+    margin: 0px 50px;
+ 
+}
+
+.services-list a{
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+.services-list{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.services-list i{
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+
+.container1{
+    align-items: center;
+    margin-bottom: 0px;
+}
+.container1 h1 span{
+    font-family: Josefin Sans, 'sans-serif';
+    font-size: 50px;
+}
+
+.container1 h1{
+    font-family: Josefin Sans,'sans-serif';
+    text-align: center;
+    padding-top: 30px;     
+    padding-bottom: 10px;
+}
+
+.grid1{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #242424;
+    text-align: center;
+    width: 400px;
+    height: 440px;
+}
+
+.grid1:hover{
+    background-color: #ff004f;
+    transform: translateY(-5px) scale(1.02);
+    transition-duration: 0.4s;
+}
+
+
+/*-----------------Contact Page------------------ */
+
+#contact{
+    margin-top: 200px;
+    margin-bottom: 80px;
+   
+}
+
+
+.contact-left{
+    flex-basis: 30%;
+    
+}
+
+.contact-left a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-right{
+    flex-basis: 65%;
+    margin-right: 20px;;
+}
+
+.contact-left p{
+    
+    margin-top: 30px;
+}
+
+.resp{
+    font-family: Josefin Sans, 'sans-serif';
+    position: relative;
+}
+
+.resp::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    left: 0%;
+    bottom: -7px;   
+    transition-duration: 0.5s;  
+}
+
+.resp:hover::after{
+    width: 100%;
+}
+
+
+
+.btn{
+    color: white;
+    text-decoration: none;
+    background-color: #ff004f;
+    position: absolute;
+    margin-top: 30px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 9px;
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn2{
+     color: white;
+    text-decoration: none;
+    background-color: #ff004f;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding-right: 4px;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.btn:hover{
+    background-color: hsl(0, 0%, 90%);
+    color: #ff004f;
+    /* border: solid #ff004f; */
+    /* border-width: 3px; */
+    
+}
+
+.btn2:hover{
+   background-color: hsl(0, 0%, 90%);
+    color: #ff004f;
+    /* border: solid #ff004f; */
+    
+    
+}
+
+.row1{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.contact-right form{
+    widows: 100%;
+    
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.foot{
+    text-align: center;
+    font-size: 14px;
+    background-color: #0d0b0b;
+}
+
+
+.contact-left i{
+    font-size: 20px;
+    margin-right: 5px;
+
+}
+
+/*-----------------css for small screens----------------*/
+/* -------------Home and About Page-------------- */
+
+@media only screen and (max-width: 600px)
+{
+    #header{
+        background-image: url(sun\ copy.jpg);
+        background-position: center;
+        background-size:cover;
+
+    }
+    .para{
+        margin-top: 50%;
+        font-size: 16px;
+        
+    }
+    .para h1{
+        font-size: 30px;
+    }
+    nav ul li{
+        display: none;
+    }
+    .sub-title{
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;;
+        margin-left: 35%;
+    }
+
+
+    .about-col-2 p{
+        margin-left: 20px;
+    }
+    .about-col-1 img{
+        width: 85%;
+        align-items: center;
+        margin-left: 37px;
+    }
+
+    .tab-con{
+        display: block ;
+    }
+    .row{
+        display: block;
+    }
+    }
+    .tab-tit p{
+        display: none;
+
+    }
+    .tab-con{
+        margin-left: 20px;
+    }
+
+
+
+    /* -------Projects Page----------- */
+
+  @media only screen and (max-width:600px){
+    .services-list{
+        display: block;
+    }
+
+    .grid1{
+        margin-bottom: 20px;
+    }
+  }
+
+
+
+    /* ------Contact Page---------- */
+
+
+    #contact{
+        padding-bottom: 80px;
+    }
+
+@media only screen and (max-width:600px){
+    .contact-right{
+        margin-left: -20px;
+        margin-top: 100px;
+    }
+    .contact-left{
+        flex-basis: 60%;
+        margin-left: -20px;
+    }
+    .row1{
+        display: block;
+        margin-left: 70px;
+    }
+}
+@media only screen and (max-width:600px){
+    .logo{
+        width: 25%;
+    }
+}
+
+
+
+
+
+
+
